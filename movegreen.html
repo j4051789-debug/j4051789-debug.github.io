@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Smart | Produkter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="index.html">
+        <img src="logo.png" alt="Move Smart Logo">
+      </a>
+  </div>
+    <nav>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="products.html">Produkter</a>
+      <a href="podcast.html">Podkast</a>
+      <a href="about.html">Om Oss</a>
+      <a href="about.html#baerekraft">Bærekraft</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="product-page">
+
+  <h1>MOVE GREEN</h1>
+  <p class="product-price">$149</p>
+
+  <div class="product-image">
+    <img src="move-green.png" alt="MOVE GREEN">
+  </div>
+
+  <p class="product-description">
+    MOVE GREEN er vårt mest miljøvennlige alternativ. Denne jetpacken er laget av resirkulerte materialer og bruker fullstendig fornybar energi som drivstoff. Perfekt for kunder som ønsker et bærekraftig valg uten å gå på kompromiss med stil eller kvalitet.
+  </p>
+
+  <h2>Egenskaper</h2>
+  <ul class="product-features">
+    <li>Laget av 92% resirkulert materiale</li>
+    <li>Drives av fornybar energi</li>
+    <li>Lavt støynivå</li>
+    <li>Lett og komfortabel å bruke</li>
+    <li>Elegant og moderne design</li>
+  </ul>
+
+  <a href="contact.html" class="cta-btn">Forhåndsbestill</a>
+  <a href="products.html" class="back-btn">← Tilbake til produkter</a>
+
+</div>
+
+    <footer>
+    © 2025 Move Smart. Alle rettigheter reservert.
+    </footer>
+
+  <script>
+    // Shrink header on scroll
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+<script src="popup.js"></script>
+</body>
+</html>

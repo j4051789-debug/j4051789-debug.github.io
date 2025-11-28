@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Smart | Produkter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="index.html">
+        <img src="logo.png" alt="Move Smart Logo">
+      </a>
+  </div>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="products.html">Produkter</a>
+      <a href="podcast.html">Podkast</a>
+      <a href="about.html">Om Oss</a>
+      <a href="about.html#baerekraft">Bærekraft</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="logo.png" alt="Move Smart Logo">
+    <h1>MOVE SMART</h1>
+    <p>Innovative jetpacks som kombinerer bærekraft, teknologi og luksus.</p>
+    <button onclick="document.querySelector('#produkter').scrollIntoView({behavior: 'smooth'})">
+      Se Produktene
+    </button>
+  </section>
+
+  <section id="produkter" class="products">
+    <div class="product-card">
+      <h2>MOVE GREEN</h2>
+      <span class="ribbon">SOON</span>
+      <p>En jetpack som passer til de som er svært miljøbevisste. Produktet er laget av resirkulert materiale, og bruker fornybar energi som drivstoff. MOVE GREEN har et elegant utseende i tråd med vår merkevare og passer kunder som verdsetter bærekraft og kvalitet.</p>
+      <p class="price">$149</p>
+      <a href="movegreen.html" class="read-more-btn">Les mer</a>
+    </div>
+
+    <div class="product-card">
+      <h2>MOVE SMARTER</h2>
+      <p>Kraft, komfort og smart teknologi — alt i én jetpack.</p>
+      <p class="price">$149</p>
+      <a href="movesmarter.html" class="read-more-btn">Les mer</a>
+    </div>
+
+    <div class="product-card">
+      <h2>MOVE SMARTER 2</h2>
+      <span class="ribbon">SOON</span>
+      <p>En oppdatert versjon av MOVE SMARTER med enda bedre motorkraft og mer komfort. Delvis laget av resirkulerte materialer, og nå med innebygde hodetelefoner!</p>
+      <p class="price">$169</p>
+      <a href="movesmarter2.html" class="read-more-btn">Les mer</a>
+    </div>
+
+    <div class="product-card">
+      <h2>MOVE SMARTEST</h2>
+      <span class="ribbon">SOON</span>
+      <p>Et abonnement som gir deg alltid den nyeste utgaven av MOVE SMARTER. Returner din gamle modell, og få den siste versjonen – vi selger de brukte som MOVE GREENEST for $109.</p>
+      <p class="price">Abonnement • lanseres sammen med MOVE SMARTER 2</p>
+      <a href="movesmartest.html" class="read-more-btn">Les mer</a>
+    </div>
+  </section>
+
+  <section class="social-media">
+  <h2>Følg oss</h2>
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <img src="icons/facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+      <img src="icons/tiktok.svg" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <img src="icons/instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://www.x.com" target="_blank" aria-label="X">
+      <img src="icons/x.svg" alt="X">
+    </a>
+    <a href="https://www.spotify.com" target="_blank" aria-label="Podcast">
+      <img src="icons/podcast.svg" alt="Podcast">
+    </a>
+  </div>
+</section>
+
+    <!-- POPUP -->
+<div class="info-bubble" id="novaBubble">
+  <img src="nova.jpg" alt="Nova" class="bubble-avatar">
+</div>
+
+<div class="info-bubble-popup" id="novaPopup">
+  <!-- Intro text -->
+  <p id="intro-text" class="bubble-text">
+    Hei, jeg heter Nova. Jeg er produktambassadør for MOVE SMART og står klar til å hjelpe deg med å velge det rette produktet.
+  </p>
+
+  <!-- Main buttons -->
+  <div class="bubble-buttons" id="main-buttons">
+    <button onclick="goToProduct('green')">Jeg vil ha et miljøvennlig alternativ</button>
+    <button onclick="goToProduct('power')">Jeg vil ha mest kraft</button>
+    <button onclick="goToProduct('comfort')">Jeg vil ha komfort og teknologi</button>
+    <button onclick="goToProduct('subscription')">Jeg vil ha et abonnement</button>
+    <button onclick="showHelpMenu()">Jeg vet ikke hva jeg vil ha. Hjelp meg velge</button>
+  </div>
+
+  <!-- Help menu -->
+  <div class="bubble-help-menu" id="help-menu">
+    <p>Her er en kort oversikt over produktene våre:</p>
+    <div class="help-menu-scroll">
+      <ul>
+        <li><strong>MOVE GREEN</strong> $149: Miljøvennlig jetpack laget av resirkulerte materialer, bruker fornybar energi.</li>
+        <li><strong>MOVE SMARTER</strong> $149: Kraft, komfort og smart teknologi i én jetpack.</li>
+        <li><strong>MOVE SMARTER 2</strong> $169: Oppgradert versjon med bedre motorkraft, komfort og innebygde hodetelefoner.</li>
+        <li><strong>MOVE SMARTEST</strong> Abonnement: Alltid nyeste versjon av MOVE SMARTER, returner gammel modell, vi selger brukte som MOVE GREENEST for $109.</li>
+      </ul>
+    </div>
+    <div class="bubble-buttons">
+      <button onclick="goToProduct('green')">MOVE GREEN</button>
+      <button onclick="goToProduct('power')">MOVE SMARTER</button>
+      <button onclick="goToProduct('comfort')">MOVE SMARTER 2</button>
+      <button onclick="goToProduct('subscription')">MOVE SMARTEST</button>
+      <button onclick="backToMain()">Tilbake</button>
+    </div>
+  </div>
+</div>
+    <!-- END POPUP -->
+
+  <footer>
+    © 2025 Move Smart. Alle rettigheter reservert.
+  </footer>
+
+  <script>
+    // Shrink header on scroll
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+<script src="popup.js"></script>
+</body>
+</html>

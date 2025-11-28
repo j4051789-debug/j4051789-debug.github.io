@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Smart | Produkter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <div class="logo">
+        <a href="index.html">
+        <img src="logo.png" alt="Move Smart Logo">
+      </a>
+  </div>
+    <nav>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="products.html">Produkter</a>
+      <a href="podcast.html">Podkast</a>
+      <a href="about.html">Om Oss</a>
+      <a href="about.html#baerekraft">Bærekraft</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
+
+<section class="podcast">
+  <div class="container">
+
+    <h1>MOVE SMART Podcasts</h1>
+    <p class="subtitle">
+      Utforsk fremtidens mobilitet gjennom samtaler, intervjuer og historier.
+    </p>
+
+    <div class="podcast-grid">
+
+      <!-- EPISODE 1 -->
+      <div class="episode-card">
+        <img src="podcast.jpg" alt="Podcast cover Episode 1">
+        <h3>Episode 1 The Vision of Flight</h3>
+        <p><strong>Varighet:</strong> 25 minutter</p>
+        <p><strong>Gjester:</strong> Sofia Larsen (CEO & Gründer)</p>
+        <p>
+          Introduksjon til MOVE SMART og historien bak selskapet.
+          Sofia deler visjonen bak personlig flyging og utviklingen av MOVE SMARTER som premiumprodukt.
+          Diskusjon om tidlige utfordringer, innovasjon og veksten frem mot 2100.
+          Avsluttes med fremtidens mobilitet og selskapets filosofi.
+        </p>
+
+        <!-- AUDIO PLAYER -->
+        <div class="audio-player">
+          <div class="player-info">
+            <span class="time">00:00</span>
+            <span class="duration">25:00</span>
+          </div>
+          <div class="player-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="controls">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+
+        <a href="#" class="listen-btn">🎧 Lytt Nå</a>
+      </div>
+
+      <!-- EPISODE 2 -->
+      <div class="episode-card">
+        <img src="podcast.jpg" alt="Podcast cover Episode 2">
+        <h3>Episode 2 Engineering the Future</h3>
+        <p><strong>Varighet:</strong> 30 minutter</p>
+        <p><strong>Gjester:</strong> Emilie Johansen (Lead Engineer), Ingrid Nilsen (Design Lead)</p>
+        <p>
+          En teknisk og visuell fordypning i MOVE SMARTER.
+          Emilie forklarer AI-assisterte funksjoner, sikkerhet, bærekraft og premiumtilpasning.
+          Ingrid deler tanker om designfilosofi, komfort, materialer og brukeropplevelsen.
+          En “behind-the-scenes”-reise inn i samspillet mellom funksjon og estetikk.
+        </p>
+
+        <!-- AUDIO PLAYER -->
+        <div class="audio-player">
+          <div class="player-info">
+            <span class="time">00:00</span>
+            <span class="duration">30:00</span>
+          </div>
+          <div class="player-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="controls">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+
+        <a href="#" class="listen-btn">🎧 Lytt Nå</a>
+      </div>
+
+      <!-- EPISODE 3 -->
+      <div class="episode-card">
+        <img src="podcast.jpg" alt="Podcast cover Episode 3">
+        <h3>Episode 3 Flying with Style</h3>
+        <p><strong>Varighet:</strong> 25 minutter</p>
+        <p><strong>Gjester:</strong> Kristine Hansen (Marketing & Communications), Sofia Larsen</p>
+        <p>
+          Hvordan MOVE SMARTER posisjoneres som et premiumprodukt.
+          Kristine forklarer markedsføring, historiefortelling og målgrupper.
+          Sofia deler selskapets fremtidsvisjon og global ekspansjon.
+          Episoden avsluttes med tips for å bli en del av MOVE SMARTER-fellesskapet.
+        </p>
+
+        <!-- AUDIO PLAYER -->
+        <div class="audio-player">
+          <div class="player-info">
+            <span class="time">00:00</span>
+            <span class="duration">25:00</span>
+          </div>
+          <div class="player-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="controls">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+
+        <a href="#" class="listen-btn">🎧 Lytt Nå</a>
+      </div>
+
+    </div> <!-- END GRID -->
+
+    <div class="info">
+      <p>For samarbeid eller gjesteforespørsler: <a href="mailto:podcast@movesmart.com">podcast@movesmart.com</a></p>
+    </div>
+  </div>
+</section>
+
+    <!-- POPUP -->
+<div class="info-bubble" id="novaBubble">
+  <img src="nova.jpg" alt="Nova" class="bubble-avatar">
+</div>
+
+<div class="info-bubble-popup" id="novaPopup">
+  <!-- Intro text -->
+  <p id="intro-text" class="bubble-text">
+    Hei, jeg heter Nova. Jeg er produktambassadør for MOVE SMART og står klar til å hjelpe deg med å velge det rette produktet.
+  </p>
+
+  <!-- Main buttons -->
+  <div class="bubble-buttons" id="main-buttons">
+    <button onclick="goToProduct('green')">Jeg vil ha et miljøvennlig alternativ</button>
+    <button onclick="goToProduct('power')">Jeg vil ha mest kraft</button>
+    <button onclick="goToProduct('comfort')">Jeg vil ha komfort og teknologi</button>
+    <button onclick="goToProduct('subscription')">Jeg vil ha et abonnement</button>
+    <button onclick="showHelpMenu()">Jeg vet ikke hva jeg vil ha. Hjelp meg velge</button>
+  </div>
+
+  <!-- Help menu -->
+  <div class="bubble-help-menu" id="help-menu">
+    <p>Her er en kort oversikt over produktene våre:</p>
+    <div class="help-menu-scroll">
+      <ul>
+        <li><strong>MOVE GREEN</strong> $149: Miljøvennlig jetpack laget av resirkulerte materialer, bruker fornybar energi.</li>
+        <li><strong>MOVE SMARTER</strong> $149: Kraft, komfort og smart teknologi i én jetpack.</li>
+        <li><strong>MOVE SMARTER 2</strong> $169: Oppgradert versjon med bedre motorkraft, komfort og innebygde hodetelefoner.</li>
+        <li><strong>MOVE SMARTEST</strong> Abonnement: Alltid nyeste versjon av MOVE SMARTER, returner gammel modell, vi selger brukte som MOVE GREENEST for $109.</li>
+      </ul>
+    </div>
+    <div class="bubble-buttons">
+      <button onclick="goToProduct('green')">MOVE GREEN</button>
+      <button onclick="goToProduct('power')">MOVE SMARTER</button>
+      <button onclick="goToProduct('comfort')">MOVE SMARTER 2</button>
+      <button onclick="goToProduct('subscription')">MOVE SMARTEST</button>
+      <button onclick="backToMain()">Tilbake</button>
+    </div>
+  </div>
+</div>
+    <!-- END POPUP -->
+
+  <footer>
+    © 2025 Move Smart. Alle rettigheter reservert.
+  </footer>
+<script src="popup.js"></script>
+</body>
+</html>

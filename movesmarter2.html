@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Smart | Produkter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="index.html">
+        <img src="logo.png" alt="Move Smart Logo">
+      </a>
+  </div>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="products.html">Produkter</a>
+      <a href="podcast.html">Podkast</a>
+      <a href="about.html">Om Oss</a>
+      <a href="about.html#baerekraft">Bærekraft</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="product-page">
+
+  <h1>MOVE SMARTER 2</h1>
+  <p class="product-price">$169</p>
+
+  <div class="product-image">
+    <img src="move-smarter-2.png" alt="MOVE SMARTER 2">
+  </div>
+
+  <p class="product-description">
+    MOVE SMARTER 2 tar alt fra originalen og løfter det til neste nivå. Bedre motorkraft, utrolig komfort og innebygde hodetelefoner gjør den perfekt for både pendling og eventyr.
+  </p>
+
+  <h2>Forbedringer fra forrige modell</h2>
+  <ul class="product-features">
+    <li>20% sterkere motor</li>
+    <li>Oppgradert stabilisering</li>
+    <li>Innebygde trådløse hodetelefoner</li>
+    <li>Bedre ergonomi og polstring</li>
+    <li>Delvis laget av resirkulerte materialer</li>
+  </ul>
+
+  <a href="contact.html" class="cta-btn">Forhåndsbestill</a>
+  <a href="products.html" class="back-btn">← Tilbake til produkter</a>
+
+</div>
+
+<footer>
+    © 2025 Move Smart. Alle rettigheter reservert.
+</footer>
+
+  <script>
+    // Shrink header on scroll
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+<script src="popup.js"></script>
+</body>
+</html>
