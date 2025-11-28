@@ -801,6 +801,79 @@
   padding-right: 5px;
 }
 
+/* Container for the free-text mode */
+.bubble-chat {
+  display: none;              /* default hidden, JS shows it */
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Message list */
+.chat-log {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0 10px;
+  font-size: 14px;
+  background-color: #fdf4fb;
+}
+
+/* Individual messages */
+.chat-message {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.chat-message.user {
+  text-align: right;
+  color: #A355A3;
+}
+
+.chat-message.nova {
+  text-align: left;
+  color: #333;
+}
+
+/* Input row */
+.chat-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-input-row input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.chat-input-row button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #A355A3, #D055D6);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.chat-input-row button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.bubble-chat {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
 /* Scrollable product list */
 .help-menu-scroll {
   max-height: 180px;
