@@ -9,10 +9,10 @@
 <body>
   <header>
     <div class="logo">
-        <a href="index.html">
+      <a href="index.html">
         <img src="logo.png" alt="Move Smart Logo">
       </a>
-  </div>
+    </div>
     <nav>
       <a href="index.html">Hjem</a>
       <a href="products.html">Produkter</a>
@@ -66,67 +66,84 @@
   </section>
 
   <section class="social-media">
-  <h2>Følg oss</h2>
-  <div class="social-icons">
-    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-      <img src="icons/facebook.svg" alt="Facebook">
-    </a>
-    <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
-      <img src="icons/tiktok.svg" alt="TikTok">
-    </a>
-    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-      <img src="icons/instagram.svg" alt="Instagram">
-    </a>
-    <a href="https://www.x.com" target="_blank" aria-label="X">
-      <img src="icons/x.svg" alt="X">
-    </a>
-    <a href="https://www.spotify.com" target="_blank" aria-label="Podcast">
-      <img src="icons/podcast.svg" alt="Podcast">
-    </a>
-  </div>
-</section>
-
-    <!-- POPUP -->
-<div class="info-bubble" id="novaBubble">
-  <img src="nova.jpg" alt="Nova" class="bubble-avatar">
-</div>
-
-<div class="info-bubble-popup" id="novaPopup">
-  <!-- Intro text -->
-  <p id="intro-text" class="bubble-text">
-    Hei, jeg heter Nova. Jeg er produktambassadør for MOVE SMART og står klar til å hjelpe deg med å velge det rette produktet.
-  </p>
-
-  <!-- Main buttons -->
-  <div class="bubble-buttons" id="main-buttons">
-    <button onclick="goToProduct('green')">Jeg vil ha et miljøvennlig alternativ</button>
-    <button onclick="goToProduct('power')">Jeg vil ha mest kraft</button>
-    <button onclick="goToProduct('comfort')">Jeg vil ha komfort og teknologi</button>
-    <button onclick="goToProduct('subscription')">Jeg vil ha et abonnement</button>
-    <button onclick="showHelpMenu()">Jeg vet ikke hva jeg vil ha. Hjelp meg velge</button>
-  </div>
-
-  <!-- Help menu -->
-  <div class="bubble-help-menu" id="help-menu">
-    <p>Her er en kort oversikt over produktene våre:</p>
-    <div class="help-menu-scroll">
-      <ul>
-        <li><strong>MOVE GREEN</strong> $149: Miljøvennlig jetpack laget av resirkulerte materialer, bruker fornybar energi.</li>
-        <li><strong>MOVE SMARTER</strong> $149: Kraft, komfort og smart teknologi i én jetpack.</li>
-        <li><strong>MOVE SMARTER 2</strong> $169: Oppgradert versjon med bedre motorkraft, komfort og innebygde hodetelefoner.</li>
-        <li><strong>MOVE SMARTEST</strong> Abonnement: Alltid nyeste versjon av MOVE SMARTER, returner gammel modell, vi selger brukte som MOVE GREENEST for $109.</li>
-      </ul>
+    <h2>Følg oss</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <img src="icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+        <img src="icons/tiktok.svg" alt="TikTok">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <img src="icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.x.com" target="_blank" aria-label="X">
+        <img src="icons/x.svg" alt="X">
+      </a>
+      <a href="https://www.spotify.com" target="_blank" aria-label="Podcast">
+        <img src="icons/podcast.svg" alt="Podcast">
+      </a>
     </div>
-    <div class="bubble-buttons">
-      <button onclick="goToProduct('green')">MOVE GREEN</button>
-      <button onclick="goToProduct('power')">MOVE SMARTER</button>
-      <button onclick="goToProduct('comfort')">MOVE SMARTER 2</button>
-      <button onclick="goToProduct('subscription')">MOVE SMARTEST</button>
-      <button onclick="backToMain()">Tilbake</button>
+  </section>
+
+  <!-- POPUP -->
+  <div class="info-bubble" id="novaBubble">
+    <img src="nova.jpg" alt="Nova" class="bubble-avatar">
+  </div>
+
+  <div class="info-bubble-popup" id="novaPopup">
+    <!-- Intro text -->
+    <p id="intro-text" class="bubble-text">
+      Hei, jeg heter Nova. Jeg er produktambassadør for MOVE SMART og står klar til å hjelpe deg med å velge det rette produktet.
+    </p>
+
+    <!-- Main buttons -->
+    <div class="bubble-buttons" id="main-buttons">
+      <button onclick="goToProduct('green')">Jeg vil ha et miljøvennlig alternativ</button>
+      <button onclick="goToProduct('power')">Jeg vil ha mest kraft</button>
+      <button onclick="goToProduct('comfort')">Jeg vil ha komfort og teknologi</button>
+      <button onclick="goToProduct('subscription')">Jeg vil ha et abonnement</button>
+      <button onclick="showHelpMenu()">Jeg vet ikke hva jeg vil ha. Hjelp meg velge</button>
+      <button onclick="openFreeChat()">Still et eget spørsmål</button>
+    </div>
+
+    <!-- Help menu -->
+    <div class="bubble-help-menu" id="help-menu">
+      <p>Her er en kort oversikt over produktene våre:</p>
+      <div class="help-menu-scroll">
+        <ul>
+          <li><strong>MOVE GREEN</strong> $149: Miljøvennlig jetpack laget av resirkulerte materialer, bruker fornybar energi.</li>
+          <li><strong>MOVE SMARTER</strong> $149: Kraft, komfort og smart teknologi i én jetpack.</li>
+          <li><strong>MOVE SMARTER 2</strong> $169: Oppgradert versjon med bedre motorkraft, komfort og innebygde hodetelefoner.</li>
+          <li><strong>MOVE SMARTEST</strong> Abonnement: Alltid nyeste versjon av MOVE SMARTER, returner gammel modell, vi selger brukte som MOVE GREENEST for $109.</li>
+        </ul>
+      </div>
+      <div class="bubble-buttons">
+        <button onclick="goToProduct('green')">MOVE GREEN</button>
+        <button onclick="goToProduct('power')">MOVE SMARTER</button>
+        <button onclick="goToProduct('comfort')">MOVE SMARTER 2</button>
+        <button onclick="goToProduct('subscription')">MOVE SMARTEST</button>
+        <button onclick="backToMain()">Tilbake</button>
+      </div>
+    </div>
+
+    <!-- Free-text chat mode (separate sibling, not inside help-menu) -->
+    <div class="bubble-chat" id="chat-menu" style="display: none;">
+      <p class="bubble-text">Skriv spørsmålet ditt til Nova:</p>
+
+      <div id="nova-chat-log" class="chat-log"></div>
+
+      <div class="chat-input-row">
+        <input id="nova-input" type="text" placeholder="Skriv her..." />
+        <button id="nova-send-btn" type="button">Send</button>
+      </div>
+
+      <div class="bubble-buttons">
+        <button onclick="backToMain()">Tilbake</button>
+      </div>
     </div>
   </div>
-</div>
-    <!-- END POPUP -->
+  <!-- END POPUP -->
 
   <footer>
     © 2025 Move Smart. Alle rettigheter reservert.
@@ -143,6 +160,6 @@
       }
     });
   </script>
-<script src="popup.js"></script>
+  <script src="popup.js"></script>
 </body>
 </html>
