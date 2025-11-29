@@ -962,6 +962,21 @@
   font-size: 15px;
 }
 
+.jetpack-showcase {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 20px;
+  background: #fff;
+}
+
+.jetpack-showcase img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
 .cta-btn {
   display: inline-block;
   padding: 12px 20px;
