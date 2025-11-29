@@ -163,6 +163,7 @@ function getNovaReply(text) {
   // KJØP / BESTILLING
   if (
     msg.includes("kjøpe") ||
+    msg.includes("kjøp") ||
     msg.includes("kjop") ||
     msg.includes("bestille") ||
     msg.includes("bestilling") ||
